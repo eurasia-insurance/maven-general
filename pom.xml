@@ -121,6 +121,11 @@
 			<name>Eurasia Maven Repository</name>
 			<url>http://mvnrepo.theeurasia.kz/repository/releases/</url>
 		</repository>
+		<repository>
+			<id>primefaces-repository</id>
+			<name>Primefaces Maven Repository</name>
+			<url>http://repository.primefaces.org/</url>
+		</repository>
 	</repositories>
 
 </project>
