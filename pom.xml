@@ -7,7 +7,7 @@
 	<version>1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>LAPSA General parent pom</name>
+	<name>LAPSA General Java EE 7 parent POM</name>
 
 	<organization>
 		<name>LAPSA, JSC</name>
