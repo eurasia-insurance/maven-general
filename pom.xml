@@ -105,6 +105,14 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<version>2.4</version>
 				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.10.3</version>
+					<configuration>
+						<failOnError>false</failOnError>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
@@ -114,7 +122,6 @@
 		<developerConnection>scm:git:https://gitrepo.theeurasia.kz/vadim.isaev/javaee7-app-parent.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
-
 
 	<repositories>
 		<repository>
