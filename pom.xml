@@ -22,6 +22,16 @@
 		</license>
 	</licenses>
 
+	<developers>
+		<developer>
+			<name>Vadim Isaev</name>
+			<email>vadim.o.isaev@gmail.com</email>
+			<roles>
+				<role>God</role>
+			</roles>
+		</developer>
+	</developers>
+
 	<distributionManagement>
 		<repository>
 			<id>archiva.releases</id>
