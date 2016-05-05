@@ -134,6 +134,9 @@
 				<artifactId>maven-ear-plugin</artifactId>
 				<configuration>
 					<version>7</version>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
+					<fileNameMapping>no-version</fileNameMapping>
+					<skinnyWars>true</skinnyWars>
 				</configuration>
 			</plugin>
 			<plugin>
