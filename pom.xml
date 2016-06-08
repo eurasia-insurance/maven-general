@@ -278,6 +278,24 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.19.1</version>
 				</plugin>
+				<plugin>
+					<groupId>org.glassfish.maven.plugin</groupId>
+					<artifactId>maven-glassfish-plugin</artifactId>
+					<version>2.1</version>
+					<configuration>
+						<glassfishDirectory>${local.glassfish.home}</glassfishDirectory>
+						<user>${local.glassfish.user}</user>
+						<passwordFile>${local.glassfish.passwordFile}</passwordFile>
+						<domain>
+							<name>${local.glassfish.domainName}</name>
+							<httpPort>${local.glassfish.httpPort}</httpPort>
+							<adminPort>${local.glassfish.adminPort}</adminPort>
+						</domain>
+						<debug>true</debug>
+						<terse>false</terse>
+						<echo>true</echo>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
