@@ -26,6 +26,10 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
+	<modules>
+		<module>ejb</module>
+	</modules>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- internal -->
