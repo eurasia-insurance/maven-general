@@ -27,7 +27,7 @@
 	</properties>
 
 	<modules>
-		<module>ejb</module>
+		<module>eeapp</module>
 	</modules>
 
 	<dependencyManagement>
