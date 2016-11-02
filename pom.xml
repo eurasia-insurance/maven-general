@@ -353,23 +353,6 @@
 
 	<profiles>
 		<profile>
-			<id>enable-eurasia-distribution</id>
-			<distributionManagement>
-				<repository>
-					<id>eurasia.releases</id>
-					<name>Eurasia internal Release Repository</name>
-					<layout>default</layout>
-					<url>http://mvnrepo.theeurasia.kz/repository/releases/</url>
-				</repository>
-				<snapshotRepository>
-					<id>eurasia.snapshots</id>
-					<name>Eurasia internal Snapshot Repository</name>
-					<layout>default</layout>
-					<url>http://mvnrepo.theeurasia.kz/repository/snapshots/</url>
-				</snapshotRepository>
-			</distributionManagement>
-		</profile>
-		<profile>
 			<id>artifactory</id>
 			<distributionManagement>
 				<repository>
