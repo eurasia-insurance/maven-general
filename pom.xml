@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lapsa.maven.pom</groupId>
@@ -363,6 +364,21 @@
 				</snapshotRepository>
 			</distributionManagement>
 		</profile>
+		<profile>
+			<id>artifactory</id>
+			<distributionManagement>
+				<repository>
+					<id>central</id>
+					<name>artifactory.lapsa.tech-releases</name>
+					<url>http://artifactory.lapsa.tech/artifactory/libs-release-local</url>
+				</repository>
+				<snapshotRepository>
+					<id>snapshots</id>
+					<name>artifactory.lapsa.tech-snapshots</name>
+					<url>http://artifactory.lapsa.tech/artifactory/libs-snapshot-local</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
 	</profiles>
 
 	<developers>
@@ -383,18 +399,5 @@
 		<system>gitlab</system>
 		<url>https://gitrepo.theeurasia.kz/lapsa/javaee7-app-parent/issues</url>
 	</issueManagement>
-
-	<repositories>
-		<repository>
-			<id>eurasia-repository</id>
-			<name>Eurasia Maven Repository</name>
-			<url>http://mvnrepo.theeurasia.kz/repository/releases/</url>
-		</repository>
-		<repository>
-			<id>primefaces-repository</id>
-			<name>Primefaces Maven Repository</name>
-			<url>http://repository.primefaces.org/</url>
-		</repository>
-	</repositories>
 
 </project>
