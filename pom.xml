@@ -352,7 +352,7 @@
 
 	<profiles>
 		<profile>
-			<id>artifactory</id>
+			<id>lapsa-tech-enabled</id>
 			<distributionManagement>
 				<repository>
 					<id>central</id>
