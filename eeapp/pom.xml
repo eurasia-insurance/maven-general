@@ -31,14 +31,12 @@
 				<groupId>org.jboss.arquillian.container</groupId>
 				<artifactId>arquillian-glassfish-embedded-3.1</artifactId>
 				<version>1.0.1</version>
-				<scope>test</scope>
 			</dependency>
 			<!-- http://mvnrepository.com/artifact/org.glassfish.main.extras/glassfish-embedded-all -->
 			<dependency>
 				<groupId>org.glassfish.main.extras</groupId>
 				<artifactId>glassfish-embedded-all</artifactId>
 				<version>4.1.2</version>
-				<scope>test</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -73,12 +71,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<systemPropertyVariables>
-						<java.util.logging.config.file>
-							${project.build.testOutputDirectory}/logging.properties
-						</java.util.logging.config.file>
-						<derby.stream.error.file>
-							${project.build.directory}/derby.log
-						</derby.stream.error.file>
+						<java.util.logging.config.file>${project.build.testOutputDirectory}/logging.properties</java.util.logging.config.file>
+						<derby.stream.error.file>${project.build.directory}/derby.log</derby.stream.error.file>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
