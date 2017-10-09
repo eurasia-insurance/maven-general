@@ -149,6 +149,14 @@
 				<artifactId>maven-ejb-plugin</artifactId>
 				<configuration>
 					<ejbVersion>3.1</ejbVersion>
+					<generateClient>true</generateClient>
+					<clientExcludes>
+						<clientExclude>**/*Bean.class</clientExclude>
+						<clientExclude>**/*Bean$*.class</clientExclude>
+						<clientExclude>**/*EJB.class</clientExclude>
+						<clientExclude>**/*EJB$*.class</clientExclude>
+						<clientExclude>**/beans/**</clientExclude>
+					</clientExcludes>
 				</configuration>
 			</plugin>
 			<plugin>
