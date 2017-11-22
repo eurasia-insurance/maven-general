@@ -180,7 +180,7 @@
 			<id>lapsa-tech-enabled</id>
 			<distributionManagement>
 				<repository>
-					<id>central</id>
+					<id>release</id>
 					<name>artifactory.lapsa.tech-releases</name>
 					<url>https://artifactory.lapsa.tech/artifactory/libs-release-local</url>
 				</repository>
