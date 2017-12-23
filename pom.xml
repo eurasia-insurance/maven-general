@@ -142,6 +142,7 @@
 					<defaultLibBundleDir>lib</defaultLibBundleDir>
 					<fileNameMapping>no-version</fileNameMapping>
 					<skinnyWars>true</skinnyWars>
+					<applicationName>${project.artifactId}</applicationName>
 				</configuration>
 			</plugin>
 			<plugin>
