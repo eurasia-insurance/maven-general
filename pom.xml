@@ -4,7 +4,7 @@
 
 	<groupId>tech.lapsa.maven</groupId>
 	<artifactId>maven-general</artifactId>
-	<version>3.2-SNAPSHOT</version>
+	<version>3.2</version>
 	<packaging>pom</packaging>
 
 	<name>Maven Lib : General POM</name>
@@ -205,7 +205,7 @@
 	<scm>
 		<connection>scm:git:https://gitlab.lapsa.tech/lapsa/maven/general.git</connection>
 		<developerConnection>scm:git:https://gitlab.lapsa.tech/lapsa/maven/general.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v3.2</tag>
 	</scm>
 
 	<issueManagement>
