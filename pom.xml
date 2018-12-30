@@ -4,7 +4,7 @@
 
 	<groupId>tech.lapsa.maven</groupId>
 	<artifactId>maven-general</artifactId>
-	<version>CURRENT-SNAPSHOT</version>
+	<version>10</version>
 	<packaging>pom</packaging>
 
 	<name>Maven Lib : General POM</name>
@@ -205,7 +205,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/eurasia-insurance/maven-general.git</connection>
 		<developerConnection>scm:git:https://github.com/eurasia-insurance/maven-general.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v10</tag>
 	</scm>
 
 </project>
