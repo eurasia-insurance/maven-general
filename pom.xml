@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>tech.lapsa.maven</groupId>
@@ -104,24 +105,16 @@
 					<groupId>org.glassfish.maven.plugin</groupId>
 					<artifactId>maven-glassfish-plugin</artifactId>
 					<version>2.1</version>
-					<configuration>
-						<glassfishDirectory>${local.glassfish.home}</glassfishDirectory>
-						<user>${local.glassfish.user}</user>
-						<passwordFile>${local.glassfish.passwordFile}</passwordFile>
-						<domain>
-							<name>${local.glassfish.domainName}</name>
-							<httpPort>${local.glassfish.httpPort}</httpPort>
-							<adminPort>${local.glassfish.adminPort}</adminPort>
-						</domain>
-						<debug>true</debug>
-						<terse>false</terse>
-						<echo>true</echo>
-					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>com.samaxes.maven</groupId>
 					<artifactId>minify-maven-plugin</artifactId>
 					<version>1.7.6</version>
+				</plugin>
+				<plugin>
+					<groupId>org.bsc.maven</groupId>
+					<artifactId>maven-processor-plugin</artifactId>
+					<version>3.3.2</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
