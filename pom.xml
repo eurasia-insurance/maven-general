@@ -9,18 +9,6 @@
 
 	<name>Maven Lib : General POM</name>
 
-	<organization>
-		<name>LAPSA, JSC</name>
-		<url>http://www.lapsa.org</url>
-	</organization>
-
-	<licenses>
-		<license>
-			<name>GNU General Public License (GPL)</name>
-			<url>http://www.gnu.org/licenses/gpl.html</url>
-		</license>
-	</licenses>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -170,15 +158,30 @@
 
 	<profiles>
 		<profile>
-			<id>lapsa-tech-enabled</id>
+			<id>artifactory-lapsa-tech-enabled</id>
 			<distributionManagement>
 				<repository>
-					<id>release</id>
+					<id>artifactory.lapsa.tech-release</id>
+					<name>artifactory.lapsa.tech-releases</name>
+					<url>http://artifactory.lapsa.tech/artifactory/libs-release-local</url>
+				</repository>
+				<snapshotRepository>
+					<id>artifactory.lapsa.tech-snapshots</id>
+					<name>artifactory.lapsa.tech-snapshots</name>
+					<url>http://artifactory.lapsa.tech/artifactory/libs-snapshot-local</url>
+				</snapshotRepository>
+			</distributionManagement>
+		</profile>
+		<profile>
+			<id>artifactory-lapsa-tech-SSL-enabled</id>
+			<distributionManagement>
+				<repository>
+					<id>artifactory.lapsa.tech-release</id>
 					<name>artifactory.lapsa.tech-releases</name>
 					<url>https://artifactory.lapsa.tech/artifactory/libs-release-local</url>
 				</repository>
 				<snapshotRepository>
-					<id>snapshots</id>
+					<id>artifactory.lapsa.tech-snapshots</id>
 					<name>artifactory.lapsa.tech-snapshots</name>
 					<url>https://artifactory.lapsa.tech/artifactory/libs-snapshot-local</url>
 				</snapshotRepository>
