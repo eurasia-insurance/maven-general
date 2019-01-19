@@ -145,6 +145,21 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<includes>
+						<include>Test*</include>
+						<include>*Test</include>
+						<include>*Tests</include>
+						<include>*TestCase</include>
+						<include>*Spec</include>
+						<include>*Spock</include>
+						<include>*Specification</include>
+					</includes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-ear-plugin</artifactId>
 				<configuration>
 					<version>7</version>
